@@ -5,13 +5,10 @@ body {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  background-color: rgba(163, 159, 159, 0.2);
+  background-color: rgba(231, 20, 20, 0.2);
 }
 
-/* .App{
 
- background-color: transparent !important;
- } */
 .header-section {
   background-color: transparent;
 
@@ -29,9 +26,14 @@ body {
   font-size: 18px;
   color: grey;
   text-decoration: none;
+  margin-inline: 30px;
+  @media (min-width: 768px) and (max-width: 991px) {
+   
+   margin-inline: 20px;
+  }
 }
 
-.header-icon {}
+
 
 html {
   scroll-behavior: smooth;
@@ -60,17 +62,65 @@ html {
 
 /* HOME */
 #home,
-#proyects,
+
 #aboutme,
 #contact {
   height: 100vh;
 }
 
 .img-bg-app {
+  position: relative;
+  /* Asegura que sea un contenedor relativo para sus hijos absolutos */
+  overflow-x: hidden;
+  /* Evita el desbordamiento horizontal */
   background-attachment: fixed;
-  /* height: 100vh; */
-
+  /* Tus otras propiedades */
 }
+
+#navbar-example {
+  max-width: 100%;
+  /* Limita el ancho máximo al de la pantalla */
+  left: 0;
+  /* Alinea a la izquierda */
+  right: 0;
+  /* Alinea a la derecha */
+  /* Asegúrate de no tener un padding o margin que sobrepase el contenedor */
+}
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.dropdown-responsive-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: baseline;
+}
+
+@media (max-width: 768px) {
+  .header-right {
+   
+    display: none;
+    /* Se oculta por defecto en móviles */
+  }
+  .hamburger-menu {
+    display: flex !important;
+    
+  }
+  .container-fluid{
+    justify-content: end;
+    margin-right: 50px;
+  }
+}
+.header-right {
+
+  margin-right: 30px;
+ 
+}
+
 
 .container-home {
   padding-top: 10%;
@@ -89,7 +139,27 @@ html {
   color: #111;
   font-weight: 800;
   margin-bottom: 1rem;
+
   /* Agregamos un espacio debajo del título */
+  @media (max-width: 575px) {
+    margin-top: 60px;
+    font-size: 2.4rem;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    margin-top: 60px;
+    font-size: 2.4rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin-top: 60px;
+    font-size: 2.4rem;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+
+    font-size: 2.9rem;
+  }
 }
 
 .p-home {
@@ -100,7 +170,23 @@ html {
   line-height: 1.6;
   width: 700px;
   margin-bottom: 1rem;
-  /* Agregamos un espacio debajo del párrafo */
+
+  @media (max-width: 575px) {
+
+    font-size: 1rem;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    font-size: 1.2rem;
+  }
 }
 
 .button-home,
@@ -115,6 +201,32 @@ html {
   width: 200px;
   height: 50px;
   font-size: 1rem;
+
+  @media (max-width: 575px) {
+    width: 120px;
+    height: 40px;
+
+    font-size: 0.7rem;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    width: 150px;
+    height: 40px;
+    font-size: 0.8rem;
+   
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    width: 150px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    width: 150px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
 }
 
 .container-skills {
@@ -145,6 +257,28 @@ html {
   font-weight: 600;
   color: #666;
   text-align: center;
+
+  @media (max-width: 575px) {
+    flex: 0 0 calc(220px - 1rem);
+    padding: 0.8rem 2rem;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    flex: 0 0 calc(220px - 1rem);
+    padding: 0.8rem 2rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    flex: 0 0 calc(35% - 0.5rem);
+    padding: 0.8rem 0.2rem;
+  }
+
+  @media (min-width: 992px) and (max-width: 1200px) {
+    flex: 0 0 calc(20% - 1rem);
+    /* Ajusta para 5 ítems por fila */
+    padding: 0.8rem 1rem;
+    /* Ajusta el padding si es necesario */
+  }
 }
 
 .section-aboutme {
@@ -159,29 +293,137 @@ html {
   align-items: center;
   /* Centra verticalmente */
   background-color: rgba(153, 153, 153, .2);
-  height: 60%;
-  width: 60%;
+  height: 500px;
+  width: 1300px;
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (max-width: 575px) {
+    height: 65%;
+    width: 90%;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    height: 75%;
+    width: 90%;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    height: 80%;
+    width: 80%;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    height: 90%;
+    width: 80%;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    height: 450px;
+    width: 1050px;
+  }
+}
+
+.aboutme-row {
+  align-items: center;
 
 }
 
 .img-aboutme {
   border-radius: 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  height: 100%;
+
+  @media (max-width: 575px) {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    width: 600px;
+    height: 320px;
+  }
 }
 
+.description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (max-width: 575px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (min-width: 993px) and (max-width: 1200px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    padding-bottom: 25%;
+    padding-top: 25%;
+    padding-right: 5%;
+  }
+
+}
 
 .reduced-padding {
-  padding-left: 80px;
-  /* Ajusta según la necesidad */
-  padding-right: 80px;
+  display: flex;
+  justify-content: center;
 }
 
 
 .title-aboutme {
+  display: flex;
+  align-items: center;
   text-align: start;
   margin-bottom: 4%;
+
+  @media (max-width: 575px) {
+    margin-bottom: 1%;
+    font-size: 25px;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    font-size: 27px;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    font-size: 29px;
+  }
+}
+
+.icon-description {
+  margin-right: 10px;
 }
 
 .parrafo-aboutme {
@@ -190,6 +432,22 @@ html {
   color: #686666;
   line-height: 1.7;
   text-align: left;
+
+  @media (max-width: 575px) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    font-size: 1.1rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1400px) {
+    font-size: 1.2rem;
+  }
 }
 
 .button-contact {
@@ -198,9 +456,132 @@ html {
   /* Centra horizontalmente */
   align-items: center;
   /* Centra verticalmente */
+margin-top: 20px;
+}
+.asd{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Projects */
+#proyects {
+ 
+  @media (max-width: 575px) {
+    padding-top: 10%;
+  }
+
+  @media (min-width: 575px) and (max-width: 767px) {
+    padding-top: 10%;
+   
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    padding-top: 6%;
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    padding-top: 6%;
+  }
+  @media (min-width: 1200px) {
+    padding-top: 5%;
+  }
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+  /* asegura que el contenedor abarque todo el ancho disponible */
+
+  /* márgenes verticales */
+  padding: 6% 10%;
+height: auto;
+  /* márgenes verticales */
+  @media (max-width: 575px) {}
 
 }
 
+.project {
+  flex: 0 0 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  /* Este margen se aplicará a todos los tamaños, ajusta según necesites */
+  @media (max-width: 575px) {
+  
+
+    max-width: 100%;
+    margin-bottom: 10%;
+    /* Ajusta este margen según sea necesario */
+ 
+}
+
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    
+      /* Asumiendo que quieres 20px de margen en total, resta 20px del 50% para cada elemento */
+      flex: 0 0 calc(50% - 20px);
+      max-width: calc(50% - 10px);
+      margin-left: 10px;
+      /* Añade un margen a la izquierda de cada elemento */
+      margin-right: 10px;
+      /* Añade un margen a la derecha de cada elemento */
+      margin-bottom: 20px;
+      /* Puedes ajustar este valor para más espacio entre filas */
+    
+  }
+  @media (min-width: 768px) and (max-width: 1000px) {
+   
+      /* 50% para que dos elementos llenen el ancho, menos el margen que deseas entre ellos */
+      flex: 0 0 calc(50% - 20px); /* Ajusta los 20px a la cantidad de margen que necesitas */
+      max-width: calc(50% - 20px); /* Asegura que el elemento no exceda el ancho calculado */
+      
+      /* Añade un margen a los lados de cada elemento */
+      margin-left: 10px; /* La mitad del espacio entre elementos será el margen izquierdo */
+      margin-right: 10px; /* La otra mitad del espacio entre elementos será el margen derecho */
+      
+      /* Ajusta el valor para más espacio entre las filas de elementos */
+      margin-bottom: 20px;
+    
+  }
+  @media (min-width: 1001px) {
+   
+      /* 33.333% para que tres elementos llenen el ancho, menos el margen que deseas entre ellos */
+      flex: 0 0 calc(30.333% - 30px); /* Ajusta los 30px a la cantidad de margen que necesitas */
+      max-width: calc(40.333% - 30px); /* Asegura que el elemento no exceda el ancho calculado */
+      
+      /* Añade un margen a los lados de cada elemento */
+      margin-left: 15px; /* La mitad del espacio entre elementos será el margen izquierdo */
+      margin-right: 15px; /* La otra mitad del espacio entre elementos será el margen derecho */
+      
+      /* Ajusta el valor para más espacio entre las filas de elementos */
+      margin-bottom: 20px;
+    
+  }
+  
+  
+  
+}
+
+
+
+
+
+
+.project img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+
+  @media (max-width: 575px) {
+    width: 250px;
+    height: 150px;
+
+  }
+}
 
 /* CONTACT */
 #contact {
@@ -210,6 +591,12 @@ html {
   height: 100vh;
   align-items: center;
   justify-content: center;
+  
+  @media (max-width: 575px) {
+    padding-top: 2%;
+  }
+  
+
 }
 
 
@@ -222,18 +609,80 @@ html {
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: 575px) {
+   height: 50%;
+    width: 80%;
+    
+  }
+  @media (min-width: 576px) and (max-width: 767px) {
+    height: 50%;
+     width: 80%;
+     
+   }
+   @media(min-width: 768px) and (max-width: 991px) {
+    height: 50%;
+    width: 80%;
+    
+  }
+  @media(min-width: 992px) and (max-width: 1200px) {
+    height: 50%;
+    width: 80%;
+    
+  }
+  @media(min-width: 1201px) and (max-width: 1400px) {
+    height: 52%;
+    width: 70%;
+    
+  }
+  @media(min-width: 1401px)  {
+    height: 500px;
+    width: 900px;
+    
+  }
+
 }
 
 .container-contact2 {
   margin-right: -15px;
   margin-left: -15px;
+  
 }
 
 .title1 {
 
   font-size: 2rem;
   position: relative;
+  @media (max-width: 575px) {
+    font-size: 1rem;
+margin-bottom: 15%;
+  }
+  @media(min-width: 576px) and (max-width: 767px) {
+    font-size: 1.1rem;
+margin-bottom: 15%;
+  }
+  @media(min-width: 768px) and (max-width: 991px) {
+    font-size: 1.1rem;
+    margin-bottom: 5%;
+  }
+  @media(min-width: 992px) and (max-width: 1200px) {
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+    
+  }
+  @media(min-width: 1201px) and (max-width: 1400px) {
+    font-size: 1.4rem;
+    margin-bottom: 5%;
+  }
 }
+/* Estilo por defecto para íconos */
+.responsive-icon {
+  width: 80px; /* Tamaño por defecto */
+}
+
+
+
+
+
 
 .input {
   display: block;
@@ -248,7 +697,23 @@ html {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-
+  @media (max-width: 575px) {
+    font-size: 0.8rem;
+  }
+  @media(min-width: 576px) and (max-width: 767px) {
+    font-size: 0.9rem;
+  }
+  @media(min-width: 768px) and (max-width: 991px) {
+    font-size: 0.9rem;
+  }
+  @media(min-width: 992px) and (max-width: 1200px) {
+    font-size: 1rem;
+    
+  }
+  @media(min-width: 1201px) and (max-width: 1400px) {
+    font-size: 1.1rem;
+   
+  }
 }
 
 .input-message {
@@ -266,52 +731,98 @@ html {
   border-radius: 0.25rem;
   padding-bottom: 4.375rem;
   padding-left: 0.75rem;
+
   height: 25%;
+  @media (max-width: 575px) {
+    padding-top: 20px;
+    font-size: 0.8rem;
+  }
+  @media(min-width: 576px) and (max-width: 767px) {
+    padding-top: 20px;
+    font-size: 0.9rem;
+  }
+  @media(min-width: 768px) and (max-width: 991px) {
+    padding-top: 20px;
+    font-size: 0.9rem;
+  }
+  @media(min-width: 992px) and (max-width: 1200px) {
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+  @media(min-width: 1201px) and (max-width: 1400px) {
+    font-size: 1rem;
+    padding-top: 20px;
+  }
+  @media(min-width: 1201px) and (max-width: 1400px) {
+    font-size: 1rem;
+    padding-top: 20px;
+    
+  }
+  @media(min-width: 1401px)  {
+    font-size: 1rem;
+    padding-top: 20px;
+    
+  }
 }
 
 .contact-title {
   color: #686666;
+  @media (max-width: 575px) {
+    font-size: 15px;
+
+  }
+  @media(min-width: 576px) and (max-width: 767px) {
+    
+    font-size: 17px;
+  }
+  @media(min-width: 768px) and (max-width: 991px) {
+    
+    font-size: 18px;
+  }
+  @media(min-width: 992px) and (max-width: 1200px) {
+    font-size: 1.1rem;
+  }
+  @media(min-width: 1201px) and (max-width: 1400px) {
+    font-size: 1.2rem;
+ 
+  }
+  @media(min-width: 1201px) and (max-width: 1400px) {
+    font-size: 1.2rem;
+    
+  }
+  @media(min-width: 1401px)  {
+    font-size: 1.2rem;
+    
+  }
 }
 
 .contact-info {
   font-weight: 500;
   font-size: 20px;
   color: #686666;
+  @media (max-width: 575px) {
+    font-size: 10px;
+
+  }
+  @media(min-width: 576px) and (max-width: 767px) {
+    
+    font-size: 14px;
+  }
+  @media(min-width: 768px) and (max-width: 991px) {
+    
+    font-size: 16px;
+  }
+  @media(min-width: 992px) and (max-width: 1200px) {
+    font-size: 18px;
+  }
+  @media(min-width: 1201px) and (max-width: 1400px) {
+    font-size: 18px;
+ 
+  }
 }
-
-/* Projects */
-.projects-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%; /* asegura que el contenedor abarque todo el ancho disponible */
-  margin: 1rem 0; /* márgenes verticales */
-  padding: 6% 10%; /* márgenes verticales */
-}
-
-.project {
-  flex: 0 0 calc(33.333% - 20px); /* 33.333% para que haya 3 elementos por fila. El -20px es para compensar el gap. */
-  max-width: calc(33.333% - 20px); /* Esto asegura que las imágenes no se expandan más allá del 33.333%. */
-  display: flex;
-  justify-content: center; /* centra la imagen dentro del contenedor del proyecto */
-}
-
-.project img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-
 
 /* Footer */
-.footer-container{
+.footer-container {
   background-color: rgba(238, 238, 238, 0.973);
   height: 200px;
 }
-
-
-
-

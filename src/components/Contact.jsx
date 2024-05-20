@@ -25,7 +25,7 @@ function Contact() {
             return;
         }
 
-       
+
 
 
         emailjs
@@ -33,7 +33,7 @@ function Contact() {
                 "service_ouqnegv",
                 "template_kzfga72",
                 event.target,
-               "5UZ6TnRqx2Ot7bry1"
+                "5UZ6TnRqx2Ot7bry1"
             )
             .then(
                 (result) => {
@@ -54,17 +54,18 @@ function Contact() {
     return (
 
         <>
-            
-                <div id="contact">
-                    <div className='container-contact align-items-center '>
+
+            <div id="contact">
+                <div className='container-contact align-items-center '>
                     <form onSubmit={handleConfirm} className="section-form ">
                         <div className="contact-row row ">
                             <div className='col-12 '>
-                                <div className='container-contact2 row mt-2'>
+                                <div className='container-contact2 row '>
                                     <div className='col-6 d-flex flex-column align-items-center mt-5'>
-                                        <div className="col-10 ">
-                                            <h1 className='title1 mb-5'>
-                                                <MessageIcon className='mb-0 me-2' sx={{ color: 'lightseagreen', fontSize: 40 }} />Envia un mensaje</h1>
+                                        <div className="col-10  ">
+                                            <h1 className='title1 '>
+                                                <MessageIcon className=" responsive-icon" sx={{ color: 'lightseagreen', fontSize: 30 }} />
+                                                Envia un mensaje</h1>
 
                                             <input
                                                 type="text"
@@ -84,23 +85,27 @@ function Contact() {
                                             />
 
                                             <input type="text"
-                                                className="input-message  mb-4 "
+                                                className="input-message   "
                                                 placeholder="Mensaje"
                                                 name="message"
                                                 value={message}
                                                 onChange={(event) => setMessage(event.target.value)}
                                             />
-                                        </div>
-                                        <button type="submit" className='button-contact pb-3 pt-3 ms-5' style={{ alignSelf: 'flex-start' }}>
-                                            Enviar
-                                        </button>
 
+                                        </div>
+
+                                        <div className='col-10 asd justify-content-start'>
+
+                                            <button type="submit" className='button-contact ' >
+                                                Enviar
+                                            </button>
+                                        </div>
                                     </div>
 
                                     <div className='col-6 d-flex flex-column align-items-center mt-5'>
                                         <div className="col-10 ">
-                                            <h1 className='title1 mb-5'>
-                                                <PersonIcon className='mb-2' sx={{ color: 'lightseagreen', fontSize: 40 }} /> Contacto</h1>
+                                            <h1 className='title1 '>
+                                                <PersonIcon className='' sx={{ color: 'lightseagreen', fontSize: 30 }} /> Contacto</h1>
 
                                             <h4 className='contact-title mb-4'>¿Queres contactarte conmigo para realizar algun proyecto? </h4>
 
@@ -122,14 +127,14 @@ function Contact() {
                             </div>
                         </div>
                         {result}
-                        </form>
-                    </div>
-
-                   
-
+                    </form>
                 </div>
-                
-            
+
+
+
+            </div>
+
+
         </>
     )
 }
