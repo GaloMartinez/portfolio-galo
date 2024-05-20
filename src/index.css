@@ -27,11 +27,19 @@ body {
   color: grey;
   text-decoration: none;
   margin-inline: 30px;
+}
+.items-aboutme {
+  font-weight: 600;
+  font-size: 18px;
+  color: grey;
+  text-decoration: none;
+ 
+}
   @media (min-width: 768px) and (max-width: 991px) {
    
-   margin-inline: 20px;
-  }
-}
+  
+   }
+
 
 
 
@@ -100,6 +108,8 @@ html {
   align-items: baseline;
 }
 
+
+
 @media (max-width: 768px) {
   .header-right {
    
@@ -123,12 +133,26 @@ html {
 
 
 .container-home {
-  padding-top: 10%;
+  padding-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
+}
+@media all and (max-width: 320px) {
+  .container-home {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+ 
+  }
+  
+  
 }
 
 .title-home {
@@ -170,7 +194,9 @@ html {
   line-height: 1.6;
   width: 700px;
   margin-bottom: 1rem;
-
+  @media all and (max-width: 320px) {
+    width: 300px;
+  }
   @media (max-width: 575px) {
 
     font-size: 1rem;
@@ -298,7 +324,7 @@ html {
   border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
-
+margin-top: 50px;
   @media (max-width: 575px) {
     height: 65%;
     width: 90%;

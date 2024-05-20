@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import web1 from './../img/web1.jpg';
 import web2 from './../img/web2.png';
 import web3 from './../img/web3.jpeg';
-import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+
 
 
 function Proyects() {
