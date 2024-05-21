@@ -55,14 +55,102 @@ function Contact() {
 
         <>
 
+
+            <div id="contact">
+
+                <form onSubmit={handleConfirm} className="section-form ">
+                    <div className='container-contact2 row '>
+                        <div className='column-items col-12 col-xl-6 d-flex flex-column align-items-center '>
+                            <div className="container-item col-12 col-xl-12 ">
+                                <h1 className='title1 '>
+                                    <MessageIcon className=" responsive-icon" sx={{ color: 'lightseagreen', fontSize: { xs: 30, sm: 40 } }} />
+                                    Envia un mensaje</h1>
+
+                                <input
+                                    type="text"
+                                    className="input  mb-4"
+                                    placeholder="Nombre"
+                                    name="from_name"
+                                    value={name}
+                                    onChange={(event) => setName(event.target.value)}
+                                />
+
+                                <input type="text"
+                                    className="input  mb-4"
+                                    placeholder="Email"
+                                    name="from_email"
+                                    value={email}
+                                    onChange={(event) => setEmail(event.target.value)}
+                                />
+
+                                <input type="text"
+                                    className="input-message   "
+                                    placeholder="Mensaje"
+                                    name="message"
+                                    value={message}
+                                    onChange={(event) => setMessage(event.target.value)}
+                                />
+                               
+
+                                    <button type="submit" className='button-contact ' >
+                                        Enviar
+                                    </button>
+                               
+
+                            </div>
+
+
+                        </div>
+
+                        <div className='column-items col-12 col-xl-6 d-flex flex-column align-items-center '>
+                            <div className="container-item col-12 ">
+                                <h1 className='title1 '>
+                                    <PersonIcon className='responsive-icon-2' sx={{ color: 'lightseagreen', fontSize: { xs: 30, sm: 40 } }}/> Contacto</h1>
+
+                                <h4 className='contact-title mb-4'>¿Queres contactarte conmigo para realizar algun proyecto? </h4>
+
+                                <p className='contact-info'>
+                                    <MailIcon sx={{ color: 'lightseagreen' }} /> galomartinez1@hotmail.com
+                                </p>
+
+                                <p className='contact-info'>
+                                    <WhatsAppIcon sx={{ color: 'lightseagreen' }} /> 11-37918640
+                                </p>
+
+                                <p className='contact-info'>
+                                    <PlaceIcon sx={{ color: 'lightseagreen' }} /> Buenos Aires, Argentina
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    {result}
+                </form>
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            {/* 
             <div id="contact">
                 <div className='container-contact align-items-center '>
                     <form onSubmit={handleConfirm} className="section-form ">
-                        <div className="contact-row row ">
-                            <div className='col-12 '>
+                        <div className="contact-row ">
+                            
                                 <div className='container-contact2 row '>
-                                    <div className='col-6 d-flex flex-column align-items-center mt-5'>
-                                        <div className="col-10  ">
+                                    <div className='col-12 col-xl-6 d-flex flex-column align-items-center '>
+                                        <div className="col-12 col-xl-12 ">
                                             <h1 className='title1 '>
                                                 <MessageIcon className=" responsive-icon" sx={{ color: 'lightseagreen', fontSize: 30 }} />
                                                 Envia un mensaje</h1>
@@ -94,7 +182,7 @@ function Contact() {
 
                                         </div>
 
-                                        <div className='col-10 asd justify-content-start'>
+                                        <div className='col-12 col-xl-12 asd justify-content-start'>
 
                                             <button type="submit" className='button-contact ' >
                                                 Enviar
@@ -102,7 +190,7 @@ function Contact() {
                                         </div>
                                     </div>
 
-                                    <div className='col-6 d-flex flex-column align-items-center mt-5'>
+                                    <div className='col-12 col-xl-6 d-flex flex-column align-items-center '>
                                         <div className="col-10 ">
                                             <h1 className='title1 '>
                                                 <PersonIcon className='' sx={{ color: 'lightseagreen', fontSize: 30 }} /> Contacto</h1>
@@ -124,7 +212,7 @@ function Contact() {
                                     </div>
 
                                 </div>
-                            </div>
+                           
                         </div>
                         {result}
                     </form>
@@ -132,7 +220,7 @@ function Contact() {
 
 
 
-            </div>
+            </div> */}
 
 
         </>
