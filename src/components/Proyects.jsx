@@ -19,7 +19,7 @@ function Proyects() {
                     </a>
                 </div>
                 <div className="project">
-                <a href="https://destileria-ferlat-test.web.app/" target="_blank" rel="noopener noreferrer">
+                <a href="https://destileriafernandezlatino.com" target="_blank" rel="noopener noreferrer">
                     <img src={web2} alt="Proyecto 2" />
                     </a>
                 </div>
