@@ -18,7 +18,7 @@ function AboutMe() {
                 Acerca de mi
               </h1>
               <p className='parrafo-aboutme'>Soy un desarrollador web frontend que construye el front-end de sitios web y aplicaciones web que conducen al éxito del producto en general. Echa un vistazo a algunos de mis trabajos en la sección de Proyectos .</p>
-              <div className="d-flex justify-content-start mt-3">
+              <div className="d-flex justify-content-start ">
                 <a href="#contact" data-for="contact" className='items-aboutme '>
                   <button className='button-contact'>
                     Contactame
