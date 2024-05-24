@@ -382,8 +382,8 @@ padding-bottom: 30px;
   border-radius: 5px;
   padding-left: 5%;
   padding-right: 5%;
-  width: 100%;
-  height: 100%;
+  width: 750px;
+  height: 380px;
 
   @media (max-width: 575px) {
     width: 100%;
@@ -470,7 +470,7 @@ padding-bottom: 30px;
   display: flex;
   align-items: center;
   text-align: start;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
   @media (max-width: 320px) {
     margin-bottom: 1%;
     font-size:26px;
@@ -537,7 +537,7 @@ padding-bottom: 30px;
   /* Centra horizontalmente */
   align-items: center;
   /* Centra verticalmente */
-margin-top: 20px;
+
 }
 .asd{
   display: flex;
