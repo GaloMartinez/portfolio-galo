@@ -222,6 +222,7 @@ html {
   width: 200px;
   height: 50px;
   font-size: 1rem;
+  margin-top: 15px;
 
   @media (max-width: 575px) {
     width: 120px;
@@ -584,7 +585,7 @@ padding-bottom: 30px;
   padding: 6% 10%;
 height: auto;
   /* márgenes verticales */
-  @media (max-width: 320px) {
+  @media (max-width: 575px) {
     margin-top: 20px;
     
   }
@@ -594,11 +595,18 @@ height: auto;
   width: 100%;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  @media (max-width: 575px) {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 }
 
 .project-image:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(17, 17, 17, 0.623);
+  @media (max-width: 575px) {
+    transform: scale(1.05);
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .project {
@@ -670,7 +678,7 @@ height: auto;
 
 
 .project img {
-  width: 300px;
+  width: 350px;
   height: 200px;
   object-fit: cover;
   border-radius: 5px;
