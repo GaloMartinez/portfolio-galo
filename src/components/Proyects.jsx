@@ -15,25 +15,25 @@ function Proyects() {
             <div id="proyects" className="projects-container">
                 <div className="project">
                 <a href="https://master--curious-trifle-912ac3.netlify.app/#home" target="_blank" rel="noopener noreferrer">
-                    <img src={web1} alt="Proyecto 1" />
+                    <img src={web1} className="project-image" alt="Proyecto 1" />
                     </a>
                 </div>
                 <div className="project">
                 <a href="https://destileriafernandezlatino.com" target="_blank" rel="noopener noreferrer">
-                    <img src={web2} alt="Proyecto 2" />
+                    <img src={web2} className="project-image" alt="Proyecto 2" />
                     </a>
                 </div>
                 <div className="project">
-                    <img src={web3} alt="Proyecto 3" />
+                    <img src={web3} className="project-image" alt="Proyecto 3" />
                 </div>
                 <div className="project">
-                    <img src={web2} alt="Proyecto 4" />
+                    <img src={web2} className="project-image" alt="Proyecto 4" />
                 </div>
                 <div className="project">
-                    <img src={web3} alt="Proyecto 4" />
+                    <img src={web3} className="project-image" alt="Proyecto 4" />
                 </div>
                 <div className="project">
-                    <img src={web1} alt="Proyecto 4" />
+                    <img src={web1} className="project-image" alt="Proyecto 4" />
                 </div>
             </div>
 
