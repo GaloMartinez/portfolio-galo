@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import web1 from './../img/proyecto-portafolio.png';
 import web2 from './../img/proyecto-destileria.png';
 import web3 from './../img/web3.jpeg';
+import web4 from './../img/detailingshop.png';
 
 import WorkIcon from '@mui/icons-material/Work';
 
@@ -24,7 +25,9 @@ function Proyects() {
                     </a>
                 </div>
                 <div className="project">
-                    <img src={web3} className="project-image" alt="Proyecto 3" />
+                <a href="https://detailingshop.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <img src={web4} className="project-image" alt="Proyecto 3" />
+                    </a>
                 </div>
                 <div className="project">
                     <img src={web2} className="project-image" alt="Proyecto 4" />
