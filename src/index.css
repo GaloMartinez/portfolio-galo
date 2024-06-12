@@ -682,8 +682,8 @@ height: auto;
   height: auto;
   object-fit: cover;
   border-radius: 5px;
-  @media (max-width: 575px) {
-    width: 450px;
+  @media (max-width: 430px) {
+    width: 350px;
   height: auto;
 
   }
