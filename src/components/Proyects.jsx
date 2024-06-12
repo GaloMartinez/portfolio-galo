@@ -4,6 +4,8 @@ import web1 from './../img/proyecto-portafolio.png';
 import web2 from './../img/proyecto-destileria.png';
 import web3 from './../img/web3.jpeg';
 import web4 from './../img/detailingshop.png';
+import web5 from './../img/veterinariashifts.png';
+import web6 from './../img/vexa-software.png';
 
 import WorkIcon from '@mui/icons-material/Work';
 
@@ -30,10 +32,14 @@ function Proyects() {
                     </a>
                 </div>
                 <div className="project">
-                    <img src={web2} className="project-image" alt="Proyecto 4" />
+                <a href="https://veterinaryshifts.netlify.app" target="_blank" rel="noopener noreferrer">
+                    <img src={web5} className="project-image" alt="Proyecto 4" />
+                    </a>
                 </div>
                 <div className="project">
-                    <img src={web3} className="project-image" alt="Proyecto 4" />
+                <a href="https://vexasoftware.netlify.app/" target="_blank" rel="noopener noreferrer">
+                    <img src={web6} className="project-image" alt="Proyecto 4" />
+                    </a>
                 </div>
                 <div className="project">
                     <img src={web1} className="project-image" alt="Proyecto 4" />
