@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import web1 from './../img/proyecto-portafolio.png';
 import web2 from './../img/proyecto-destileria.png';
-import web3 from './../img/web3.jpeg';
+import web3 from './../img/moviesflix.jpg';
 import web4 from './../img/detailingshop.png';
 import web5 from './../img/veterinariashifts.png';
 import web6 from './../img/vexa-software.png';
@@ -17,7 +17,7 @@ function Proyects() {
                 Proyectos</h1>
             <div id="proyects" className="projects-container">
                 <div className="project">
-                <a href="https://master--curious-trifle-912ac3.netlify.app/#home" target="_blank" rel="noopener noreferrer">
+                <a href="https://martinezgalodev.netlify.app" target="_blank" rel="noopener noreferrer">
                     <img src={web1} className="project-image" alt="Proyecto 1" />
                     </a>
                 </div>
@@ -42,7 +42,9 @@ function Proyects() {
                     </a>
                 </div>
                 <div className="project">
-                    <img src={web1} className="project-image" alt="Proyecto 4" />
+                <a href="https://trailersmoviesapp.netlify.app" target="_blank" rel="noopener noreferrer">
+                    <img src={web3} className="project-image" alt="Proyecto 4" />
+                    </a>
                 </div>
             </div>
 

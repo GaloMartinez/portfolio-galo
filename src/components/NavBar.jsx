@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Image } from 'react-bootstrap'; 
+import { Image } from 'react-bootstrap';
 import { useState } from 'react';
 import icon from "../img/iconGM.png";
 import MenuIcon from '@mui/icons-material/Menu';
