@@ -27,6 +27,12 @@ body {
   color: grey;
   text-decoration: none;
   margin-inline: 30px;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.header-right .items:hover {
+  color: #000; /* Cambia al color de texto deseado al pasar el mouse */
+  transform: translate3d(10px, 0, 0px);
 }
 .items-aboutme {
   font-weight: 600;
