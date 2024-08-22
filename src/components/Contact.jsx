@@ -33,7 +33,7 @@ function Contact() {
                 "service_ouqnegv",
                 "template_kzfga72",
                 event.target,
-                "5UZ6TnRqx2Ot7bry1"
+                "OpnB1q9SZaAPuGkBQ"
             )
             .then(
                 (result) => {
