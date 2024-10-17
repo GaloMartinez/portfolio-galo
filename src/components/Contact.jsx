@@ -59,9 +59,9 @@ function Contact() {
             <div id="contact">
 
                 <form onSubmit={handleConfirm} className="section-form ">
-                    <div className='container-contact2 row '>
-                        <div className='column-items col-12 col-md-6 col-xl-6 d-flex flex-column align-items-center '>
-                            <div className="container-item col-12 col-md-6 col-xl-12 ">
+                    <div className='container-contact2  '>
+                        <div className='column-items col-12 col-md-12 col-xl-6 d-flex flex-column align-items-center '>
+                            <div className="container-item col-12 col-md-12 col-xl-12 ">
                                 <h1 className='title1 '>
                                     <MessageIcon className=" responsive-icon" sx={{ color: 'lightseagreen', fontSize: { xs: 30, sm: 40 } }} />
                                     Envia un mensaje</h1>
@@ -102,7 +102,7 @@ function Contact() {
 
                         </div>
 
-                        <div className='column-items col-12 col-md-6 col-xl-6 d-flex flex-column align-items-center '>
+                        <div className='column-items col-12 col-md-12 col-xl-6 d-flex flex-column align-items-center '>
                             <div className="container-item col-12 ">
                                 <h1 className='title1 '>
                                     <PersonIcon className='responsive-icon-2' sx={{ color: 'lightseagreen', fontSize: { xs: 30, sm: 40 } }}/> Contacto</h1>

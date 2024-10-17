@@ -22,14 +22,16 @@ function Home() {
                     <div className=''>
                         <h2 className='title-skills'>Mis habilidades</h2>
                         <div className='skills-skill d-flex align-items-center justify-content-around mt-5'>
-                            <div className='skills'>HTML</div>
-                            <div className='skills'>CSS</div>
                             <div className='skills'>JavaScript</div>
                             <div className='skills'>React</div>
-                            <div className='skills'>Bootstrap</div>
+                            <div className='skills'>Typscript</div>
+                            <div className='skills'>C#</div>
+                            <div className='skills'>.Net</div>
+                            <div className='skills'>SQL</div>
+                            <div className='skills'>CSS</div>
                             <div className='skills'>TailwindCSS</div>
+                            <div className='skills'>Bootstrap</div>
                             <div className='skills'>GIT</div>
-                            <div className='skills'>Github</div>
                             <div className='skills skills-long'>Responsive Design</div>
                             <div className='skills'>Firebase</div>
                         </div>
